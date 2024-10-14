@@ -1,0 +1,5 @@
+{
+  "config-logging": "Logging",
+  "config-logging.tooltip": "Toggles console logging.",
+  "config-enabled": "Enabled"
+}
