@@ -30,6 +30,7 @@ public class CrowFeeder : Building {
             float.TryParse(value, out float chance);
             if (crowsFedToday.Value && Game1.random.NextDouble() < chance) {
                 ItemRegistry.Create("(O)74");
+                ModEntry.SMonitor.Log("Crow prize dropped.", ModEntry.DesiredLog);
             }
         }
         crowsFedToday.Value = false;
@@ -38,7 +39,7 @@ public class CrowFeeder : Building {
     public override bool doAction(Vector2 tileLocation, Farmer who) {
         if (daysOfConstructionLeft.Value <= 0 && occupiesTile(tileLocation)) {
             if (Game1.didPlayerJustRightClick(ignoreNonMouseHeldInput: true)) {
-                Game1.drawObjectDialogue($"This building has fed {crowsFed.Value} crows.");
+                Game1.drawObjectDialogue(I18n.CrowsFed(crowsFedNumber: crowsFed.Value));
                 return true;
             }
         }

@@ -4,8 +4,8 @@
   "Author": "rokugin",
   "Version": "1.0.0",
   "Description": "Adds crow feeder custom building.",
-  "UniqueID": "rokugin.feedcrows",
-  "EntryDll": "FeedCrows.dll",
+  "UniqueID": "rokugin.crowfeeder",
+  "EntryDll": "CrowFeeder.dll",
   "MinimumApiVersion": "4.0.0",
   "Dependencies": [
     {

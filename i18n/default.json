@@ -1,5 +1,6 @@
 {
   "config-logging": "Logging",
   "config-logging.tooltip": "Toggles console logging.",
-  "config-enabled": "Enabled"
+  "config-enabled": "Enabled",
+  "crows-fed": "Total crows fed: {{crowsFedNumber}}"
 }

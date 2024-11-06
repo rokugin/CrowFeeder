@@ -1,7 +1,6 @@
 ﻿using CrowFeeder.Integration;
 using StardewModdingAPI;
 using StardewModdingAPI.Events;
-using CrowFeeder.Buildings;
 using CrowFeeder.Patches;
 using HarmonyLib;
 using StardewValley;
